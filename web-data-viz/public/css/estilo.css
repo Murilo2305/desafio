@@ -117,7 +117,7 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
+  background-color: #6f7302;
   height: 150px;
   color: #fff;
   display: flex;
@@ -125,36 +125,40 @@ body {
 }
 
 .footer .container {
+  display: flex;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
 
 .footer .container .version {
   font-size: 12px;
+  margin-left: 10px;
 }
 
 /* LOGIN */
 
 .login {
   height: var(--tamanho-login);
-  background-image: url('../assets/imgs/bg-jelly-fish-para-home.png');
+  background-image: url('../assets/imgs/banner.jpg');
   background-size: cover;
 }
 
 .login .container {
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
 }
 
 .card {
   width: 50%;
-  background-color: #e5e5e5;
+  background-color: rgb(111, 115, 2, .80);
+  backdrop-filter: blur(2px);
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  color: palevioletred;
+  color: #E9C583;
   flex-direction: column;
   height: fit-content;
   padding: 20px 0;
@@ -163,6 +167,7 @@ body {
 .card h2 {
   margin: 0;
   font-size: 30px;
+  color: E9C583;
 }
 
 .formulario {
@@ -173,13 +178,14 @@ body {
   flex-direction: column;
 }
 
+
 .formulario span {
   font-size: 15px;
   font-weight: 800;
 }
 
 .formulario input {
-  border: 2px solid #32b9cd;
+  border: 2px solid #6f7302;
   text-align: center;
   border-radius: 10px;
   margin: 0;
@@ -209,8 +215,8 @@ body {
   border-radius: 5px;
   font-weight: 600;
   font-size: 18px;
-  color: #fff;
-  background-color: #ED145B;
+  color: #6f7302;
+  background-color: #E9C583;
   width: 120px;
   height: 30px;
   align-self: center;
@@ -263,14 +269,23 @@ body {
 .formulario {
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 input {
   margin-bottom: 10px;
-  border: 2px solid #32b9cd;
+  border: 2px solid ;
   padding: 10px;
-  text-align: center;
+  text-align: left;
   border-radius: 10px;
+}
+
+input::placeholder {
+  text-align: left;
+}
+
+input:focus-visible {
+  outline: 1px solid #E9C583;
 }
 
 .btn {
