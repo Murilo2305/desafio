@@ -16,8 +16,13 @@ body {
 
 .dash-right .avisos {
   width: 100%;
-  color: rgb(216, 216, 216);
+  color: rgb(0, 0, 0);
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 70%;
+  height: 80%;
+  /* border: #ffffff solid; */
+  background-color: rgba(255, 255, 255, 0.836);
+  border-radius: 10px;
 }
 
 .dash-right .avisos .container {
@@ -41,13 +46,15 @@ body {
 .dash-right .avisos .div-form input {
   width: 95%;
   border-radius: 5px;
+  
 }
 
 .dash-right .avisos .div-form textarea {
   width: 95%;
-  border: 3px solid #e6005a;
-  background-color: white;
+  /* border: 3px solid #e6005a; */
+  /* background-color: white; */
   border-radius: 5px;
+  color: white;
 }
 
 .dash-right .avisos .div-form button {
@@ -85,6 +92,8 @@ body {
   align-items: stretch;
   border-bottom: 3px solid #e6005a;
   padding: 20px;
+  color: white;
+
 }
 
 .publicacao>*:not(:last-child) {
@@ -97,6 +106,8 @@ body {
 
 .div-results .feed-container {
   background-color: #212124;
+  color: white;
+  
   border-radius: 5px;
   margin-bottom: 80px;
 }
@@ -273,6 +284,9 @@ body {
   width: 70%;
   margin: auto;
   padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.834);
+  /* backdrop-filter: blur(5px); */
+  border-radius: 10px;
 }
 
 .tituloGraficos {
@@ -353,7 +367,7 @@ canvas {
   align-items: center;
   border-right: 3px solid #E9C583;
   /* background-color: #16161800; */
-   backdrop-filter: blur(10px);
+   backdrop-filter: blur(15px);
 }
 
 .card-woodtech{
@@ -366,11 +380,15 @@ canvas {
   display: flex;
   width: 70%;
   height: fit-content;
-  background-color: #161618;
+  /* background-color: rgb(255, 0, 0); */
+   height: 60%;
   position: relative;
   top: 0;
   left: 25%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
 }
 

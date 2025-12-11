@@ -66,9 +66,9 @@ function alertar(resposta, idAquario) {
 
     var card;
 
-    if (document.getElementById(`temp_aquario_${idAquario}`) != null) {
-        document.getElementById(`temp_aquario_${idAquario}`).innerHTML = temp + "°C";
-    }
+    // if (document.getElementById(`temp_aquario_${idAquario}`) != null) {
+    //     document.getElementById(`temp_aquario_${idAquario}`).innerHTML = temp + "°C";
+    // }
 
     if (document.getElementById(`card_${idAquario}`)) {
         card = document.getElementById(`card_${idAquario}`)
