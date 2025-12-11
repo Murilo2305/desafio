@@ -10,3 +10,5 @@ router.get("/alterarFaixa", function (req, res) {
 router.get('/obterFaixa/:idGalpao', function (req,res){
     madeiraController.obterFaixa(req,res);
 });
+
+module.exports = router;
