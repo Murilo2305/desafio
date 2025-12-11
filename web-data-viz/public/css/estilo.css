@@ -20,6 +20,7 @@ body {
   height: 7vh;
   border-bottom: 6px solid #E9C583;
   background-color: rgba(0,0,0,0.7);
+  z-index: 999;
 }
 
 .header .container {
@@ -31,10 +32,16 @@ body {
 .header a {
   text-decoration: none;
   color: #E9C583;
+  font-size: 22px;
+  transition: 2s;
+}
+
+.header a:hover {
+  font-weight: bolder;
 }
 
 .agora {
-  font-weight: 800;
+  font-weight: bolder;
 }
 
 .navbar {
@@ -50,6 +57,7 @@ body {
   color: #e6c78c;
   width: fit-content;
   font-weight: 500;
+  font-size: 40px;
 }
 
 .header h1 {
@@ -63,19 +71,22 @@ body {
   color: white;
   background-image: url('../assets/imgs/banner.jpg');
   background-size: cover;
+  border-bottom: 6px solid #E9C583;
 }
 
 .banner .container {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px);
 }
 
 .banner .container p {
   width: 50%;
   margin: 0;
   padding: 0;
-  font-size: 36px;
+  font-size: 50px;
 }
 
 .banner .container span {
@@ -117,11 +128,12 @@ body {
 /* FOOTER */
 
 .footer {
-  background-color: #32b9cd;
+  background-color: #6f7302;
   height: 150px;
   color: #fff;
   display: flex;
-  font-size: 15px;
+  font-size: 25px;
+  border-top: 6px solid #E9C583;
 }
 
 .footer .container {
