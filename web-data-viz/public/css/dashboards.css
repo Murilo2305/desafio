@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Barlow', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: wheat; */
 }
 
 .label-captura {
@@ -111,16 +112,16 @@ body {
 
 /* pagina graficos */
 
-.dash-header {
-  background-color: #212124;
-}
+/* .dash-header {
+   background-color: #21212400; 
+} 
+*/
 
 .dash {
   width: 80%;
   position: relative;
   top: 0;
   left: 20%;
-  background-color: #161618;
   height: 100vh;
   overflow: auto;
 }
@@ -132,11 +133,11 @@ body {
   width: 70%;
   margin: auto;
   margin-top: 10px;
-  background-color: #212124;
+  background-color: #ffffff;
 }
 
 .area-parametros-alerta .titulo-legenda {
-  color: white;
+  color: black;
   font-weight: 600;
   width: fit-content;
   margin: 10px 20px;
@@ -206,7 +207,7 @@ body {
   /* text-align: center; */
   height: 180px;
   /* justify-content: right; */
-  background-color: #212124;
+  background-color: #32b9cd;
   font-size: 20px;
 }
 
@@ -330,6 +331,8 @@ canvas {
 .janela {
   display: flex;
   /* width: 100vw; */
+  background-image: url("./../assets/backgroundDashboard.jpeg");
+
 }
 
 .header-left a {
@@ -348,10 +351,17 @@ canvas {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-right: 3px solid #32b9cd;
-  background-color: #212124;
+  border-right: 3px solid #E9C583;
+  /* background-color: #16161800; */
+   backdrop-filter: blur(10px);
 }
 
+.card-woodtech{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  
+}
 .dash-right {
   display: flex;
   width: 70%;
@@ -365,7 +375,7 @@ canvas {
 }
 
 .header-left h1 {
-  color: #32b9cd;
+  color: #E9C583;
 }
 
 .hello {
@@ -375,7 +385,7 @@ canvas {
 }
 
 .hello h3 {
-  color: #e3b062;
+  color: #ffffff;
   font-weight: 300;
   font-size: 1.2rem;
 }
@@ -387,7 +397,7 @@ canvas {
 .btn-nav {
   width: 40%;
   color: white;
-  background-color: #e6005a;
+  background-color: #E9C583;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
@@ -396,14 +406,14 @@ canvas {
 .btn-nav-white {
   width: 40%;
   background-color: white;
-  border: 3px solid #e6005a;
+  border: 3px solid white;
   border-radius: 5px;
   text-align: center;
   padding: 2% 5%;
 }
 
 .btn-nav-white h3 {
-  color: #e6005a;
+  color: #E9C583;
   padding: 0;
   margin: 0;
 }
