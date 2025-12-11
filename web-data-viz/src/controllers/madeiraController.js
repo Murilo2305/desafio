@@ -27,16 +27,13 @@ function alterarFaixa(req,res){
 
 function obterFaixa(req,res){
 
-    id = req.params.idGalapao;
+    id = req.body.idGalpao;
 
     madeiraModel.obterFaixa(id)
         .then((resultado) => {
+                res.status(200).send(resultado);
 
-            if(resultado.ok){
-
-                res.status(200).send('Tudo Certo!');
-
-            }
+     
 
         })
         .catch((erro) => {

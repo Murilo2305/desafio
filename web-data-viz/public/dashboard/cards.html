@@ -87,10 +87,20 @@
                     </div>
                 </div>
             </div>
+            <div>
+
+            </div>
 
             <div class="cards" id="cardAquarios">
-                
+
             </div>
+
+            <div class="cards" id="cardAquarios">
+                <div class="card-aquario" id="cardFaixa">
+                    carregando...
+                </div>
+            </div>
+
 
         </div>
 
@@ -116,6 +126,30 @@
                     </div>
                     `
         });
+
+        var id = JSON.parse(sessionStorage.AQUARIOS)
+        console.log(id[0].id)
+
+     
+        fetch(`/madeira/obterFaixa`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                idGalpao: id[0].id
+            })
+        }).then(function (resposta) {
+                return resposta.json();
+            })
+            .then(function (data) {
+                console.log("TESSSSSSSTE:" + JSON.stringify(data))
+                document.getElementById("cardFaixa").innerHTML = `Faixa minima: ${data[0].max} / Faixa maxima:  ${data[0].min}`
+            })
+            .catch(function (err) {
+                console.log(err);
+            })
+
     }
 
 </script>

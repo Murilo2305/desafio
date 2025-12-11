@@ -210,7 +210,10 @@ body {
   align-items: center;
   color: white;
 }
-
+#cardFaixa{
+  font-size: 30px;
+  background-color: #21212400;
+}
 .card-aquario {
   margin: 2%;
   min-width: 40%;

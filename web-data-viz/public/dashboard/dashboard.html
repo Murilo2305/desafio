@@ -71,7 +71,16 @@
             </div>
             <div id="graficos">
             </div>
+            <center>
+             <div class="cards" id="cardAquarios" >
+                 <div class="card-aquario" id="cardFaixa" >
+                        carregando...
+                    </div>
+                </div>
+            </center>
         </div>
+
+        
     </div>
 
 
@@ -113,6 +122,31 @@
         if (aquarios.length > 0) {
             exibirAquario(aquarios[0].id)
         }
+
+          var id = JSON.parse(sessionStorage.AQUARIOS)
+        console.log(id[0].id)
+
+     
+        fetch(`/madeira/obterFaixa`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                idGalpao: id[0].id
+            })
+        }).then(function (resposta) {
+                return resposta.json();
+            })
+            .then(function (data) {
+                console.log("TESSSSSSSTE:" + JSON.stringify(data))
+                document.getElementById("cardFaixa").innerHTML = `Faixa minima: ${data[0].max} / Faixa maxima:  ${data[0].min}`
+            })
+            .catch(function (err) {
+                console.log(err);
+            })
+
+
     }
 
     function alterarTitulo(idAquario) {
